@@ -1,8 +1,9 @@
-import Head from "./components/Head"
+import Cards from "./components/Cards"
 function App() {
   return (
     <>
-   <Head/>
+   
+   <Cards/>
     </>
   )
 }

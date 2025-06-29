@@ -1,8 +1,10 @@
 const Head = () =>{
     return (
-        <div className="head">
-           <p><span><hr/></span>YAY! its BOGO<span><hr/></span></p>
-        </div>
+    <div className="bogo-header">
+      <div className="line"></div>
+      <span className="text">YAY! It's BOGO</span>
+      <div className="line"></div>
+    </div>
     )
 }
 export default Head;

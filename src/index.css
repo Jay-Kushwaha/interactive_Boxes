@@ -1,5 +1,197 @@
 * {
-  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.bogo-header {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 50px 0;
+}
+
+.bogo-header .line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.bogo-header .text {
+  color: #f36;
+  font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 15px 0;
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #fff;
+  transition: border 0.3s;
+}
+
+.card input[type="radio"] {
+  accent-color: #f36;
+  transform: scale(1.4);
+  margin-top: 5px;
+}
+
+.card .content {
+  flex: 1;
+}
+
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unit {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.badge {
+  background-color: #f36;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.price {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+.price del {
+  color: gray;
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+.note {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.card.selected {
+  border: 2px solid #f36;
+}
+
+.popular {
+  background-color: #fff5f7;
+  position: relative;
+}
+
+.ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #f36;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 0 6px 0 6px;
+}
+
+.options {
+  margin-top: 15px;
+}
+
+.option-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option-row select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .option-row {
+    flex-direction: column;
+  }
+}
+
+/* footer */
+.footer {
+  margin-top: 30px;
   text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  padding: 0 5px 10px;
+}
+
+.delivery {
+  color: #f36;
+  font-weight: 500;
+}
+
+.total {
+  font-weight: 600;
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: #f36;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #e22850;
+}
+
+.powered {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #999;
+  font-style: italic;
+  text-align: right;
+  padding-right: 6px;
 }
